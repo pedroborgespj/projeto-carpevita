@@ -1,0 +1,64 @@
+ <img src="images/carpevita.png" alt="carpe-vita" style="width: fit-content;">
+            <ul>
+                <li><a href="">INÍCIO</a></li>
+                <li><a href="">SOBRE NÓS</a></li>
+                <li><a href="">SERVIÇOS</a></li>
+                <li><a href="">FALE CONOSCO</a></li>
+            </ul>
+
+<div id="container-busca">
+                <input type="text" name="" id="" placeholder="Aonde Vamos?" style="width: 400px; border-radius: 4px; border: solid transparent;">
+                <input id="botão" type="button" value="Buscar">
+            </div>
+
+
+#container-busca {
+    background-color: #0C143C;
+    width: 550px;
+    height: 30px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+#botão {
+    background-color: #0071EB;
+    margin-left: 20px;
+    color: white;
+    width: 120px;
+    border-radius: 5rem;
+    border: 2px solid transparent;
+}
+
+#serviços #cartoes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+#serviços #cartoes #cartao1 {
+    background-image: url(../images/prague-3010407_640.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+#serviços #cartoes #cartao2 {
+    background-image: url(../images/intercambio-2647096_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+#serviços #cartoes #cartao3 {
+    background-image: url(../images/cidadania-315266_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
