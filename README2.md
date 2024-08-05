@@ -45,3 +45,78 @@ Example Test Case
     Open Browser    ${URL}    ${BROWSER}
     Click Element   id=example-id
     [Teardown]      Close Browser
+```
+## Selenium WebDriver
+
+**Selenium WebDriver** is a web automation tool that allows you to programmatically control a web browser. It is widely used for browser automation and testing purposes.
+
+### Basic Selenium Commands
+
+- **Open Browser**: Opens a new browser instance.
+- **Click Element**: Clicks an element on the webpage.
+- **Input Text**: Inputs text into a text field.
+- **Close Browser**: Closes the browser instance.
+
+## Page Objects
+
+The **Page Object Model (POM)** is a design pattern that enhances test maintenance and reduces code duplication by encapsulating web page elements and actions in separate classes.
+
+## Project Structure
+
+```plaintext
+project-folder/
+├── tests/
+│   └── example_test.robot
+├── pages/
+│   └── login_page.py
+├── resources/
+│   └── keywords.robot
+├── scripts/
+│   └── report_generator.py
+├── output/
+│   └── output.xml
+├── README.md
+└── requirements.txt
+```
+
+## Setup Instructions
+
+### Install Python
+
+Download and install Python from [python.org](https://www.python.org/downloads/).
+
+### Install Robot Framework and Selenium Library
+
+Open a terminal and run the following commands:
+
+```bash
+pip install robotframework
+pip install robotframework-seleniumlibrary
+pip install pandas
+pip install openpyxl
+```
+
+## Running the Tests
+
+To run the test cases, navigate to the project directory and execute:
+
+```bash
+robot tests/example_test.robot
+```
+
+## Generating the Report
+
+After running the tests, use the provided script to generate an Excel report from the output XML:
+
+```bash
+python scripts/report_generator.py output/output.xml output/report.xlsx
+```
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
